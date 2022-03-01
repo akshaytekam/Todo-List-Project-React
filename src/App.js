@@ -1,15 +1,17 @@
-import './App.css';
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './Components/NavbarComp';
+import TodoList from './Components/TodoList';
 
 function App() {
   return (
-    <div className="App">
+    <>
+     <NavbarComp />
       
-      <NavbarComp/>
-
-    </div>
-  );
+       <TodoList />
+    </>
+  )
 }
 
-export default App;
+export default App
+
